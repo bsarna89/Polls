@@ -13,4 +13,8 @@ export const copy = {
     ],
     buttonLabel: "Vote",
   },
+  results: {
+    header: "Results",
+    noResults: "You Have Not Voted Yet",
+  },
 };
