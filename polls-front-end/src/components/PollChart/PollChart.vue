@@ -19,8 +19,11 @@ const setChartData = () => {
     labels: props.poll.options.map((option) => option.text),
     datasets: [
       {
-        label: "Vote Results",
-        data: props.poll.options.map((option) => option.votes),
+        label: "Vote Results In %",
+        data: props.poll.options.map((option) => {
+          const percentage = (option.votes / props.poll.totalVotes) * 100;
+          return parseFloat(percentage.toFixed(2));
+        }),
         backgroundColor: [
           "rgba(249, 115, 22, 0.2)",
           "rgba(6, 182, 212, 0.2)",

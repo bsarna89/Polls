@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import { copy } from "../../assets/copy.ts";
 
 // Prime Vue Imports//
 import Menubar from "primevue/menubar";
+import Avatar from "primevue/avatar";
+import Button from "primevue/button";
 import "primeicons/primeicons.css";
 
+const { navBar } = copy;
 const router = useRouter();
 
 const items = ref([
@@ -76,6 +80,19 @@ const items = ref([
           <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down ml-2" />
         </a>
       </template>
+      <template #end>
+        <div class="flex items-center gap-2 end">
+          <Button :label="navBar.logOut" severity="contrast" size="small" />
+          <Avatar :image="navBar.links[0]" shape="circle" />
+        </div>
+      </template>
     </Menubar>
   </div>
 </template>
+
+<style>
+.end {
+  display: flex;
+  gap: 5px;
+}
+</style>

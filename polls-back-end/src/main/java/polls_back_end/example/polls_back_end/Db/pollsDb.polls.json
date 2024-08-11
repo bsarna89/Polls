@@ -1,0 +1,142 @@
+[{
+  "_id": {
+    "$oid": "66b667d3156bb475648dfe5a"
+  },
+  "isActive": true,
+  "totalVotes": 84,
+  "question": "Your favourite meal?",
+  "options": [
+    {
+      "text": "Italian",
+      "votes": 35
+    },
+    {
+      "text": "Mexican",
+      "votes": 15
+    },
+    {
+      "text": "Chinese",
+      "votes": 7
+    },
+    {
+      "text": "Japanese",
+      "votes": 17
+    },
+    {
+      "text": "Thai",
+      "votes": 10
+    }
+  ],
+  "_class": "polls_back_end.example.polls_back_end.Model.Poll"
+},
+{
+  "_id": {
+    "$oid": "66b6687b156bb475648dfe5b"
+  },
+  "isActive": true,
+  "totalVotes": 205,
+  "question": "Which programming language do you prefer for backend development?",
+  "options": [
+    {
+      "text": "Java",
+      "votes": 43
+    },
+    {
+      "text": "Python",
+      "votes": 57
+    },
+    {
+      "text": "JavaScript (Node.js)",
+      "votes": 78
+    },
+    {
+      "text": "Go",
+      "votes": 27
+    }
+  ],
+  "_class": "polls_back_end.example.polls_back_end.Model.Poll"
+},
+{
+  "_id": {
+    "$oid": "66b72d59d1ffd0561c9560b5"
+  },
+  "isActive": true,
+  "totalVotes": 405,
+  "question": "Cat or Dog?",
+  "options": [
+    {
+      "text": "Cat",
+      "votes": 206
+    },
+    {
+      "text": "Dog",
+      "votes": 199
+    }
+  ],
+  "_class": "polls_back_end.example.polls_back_end.Model.Poll"
+},
+{
+  "_id": {
+    "$oid": "66b790246c8ead7e5558452b"
+  },
+  "isActive": true,
+  "totalVotes": 4063,
+  "question": "What is your favourite Front End framework?",
+  "options": [
+    {
+      "text": "React",
+      "votes": 2021
+    },
+    {
+      "text": "Vue",
+      "votes": 1134
+    },
+    {
+      "text": "Angular",
+      "votes": 908
+    }
+  ],
+  "_class": "polls_back_end.example.polls_back_end.Model.Poll"
+},
+{
+  "_id": {
+    "$oid": "66b8cb5439a9d30e51d5e561"
+  },
+  "isActive": true,
+  "totalVotes": 32,
+  "question": "Which city you like the most?",
+  "options": [
+    {
+      "text": "London",
+      "votes": 11
+    },
+    {
+      "text": "Manchester",
+      "votes": 11
+    },
+    {
+      "text": "Liverpool",
+      "votes": 10
+    }
+  ],
+  "_class": "polls_back_end.example.polls_back_end.Model.Poll"
+},
+{
+  "_id": {
+    "$oid": "66b8d09039a9d30e51d5e562"
+  },
+  "isActive": true,
+  "totalVotes": 15,
+  "question": "Are you a morning person?",
+  "options": [
+    {
+      "text": "Yes",
+      "votes": 10
+    },
+    {
+      "text": "No",
+      "votes": 5
+    }
+  ],
+  "_class": "polls_back_end.example.polls_back_end.Model.Poll"
+}]

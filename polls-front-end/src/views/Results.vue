@@ -8,7 +8,7 @@ const { results } = copy;
 const store = useDataStore();
 
 const polls = computed(() => store.polls.filter((poll) => !poll.active));
-const displayNoResults = polls.value.length === 0;
+const displayNoResults = computed(() => polls.value.length === 0);
 
 onMounted(() => {
   store.fetchData();
@@ -30,7 +30,7 @@ onMounted(() => {
 
 <style>
 .h1,
-h2 {
+.h2 {
   margin-bottom: 20px;
   text-align: center;
 }
