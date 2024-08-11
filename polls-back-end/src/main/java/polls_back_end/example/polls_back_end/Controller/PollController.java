@@ -12,6 +12,7 @@ import polls_back_end.example.polls_back_end.Service.PollService;
 
 @RestController
 @RequestMapping("/api/polls")
+@CrossOrigin(origins = "*")
 public class PollController {
     @Autowired
     private PollService pollService;

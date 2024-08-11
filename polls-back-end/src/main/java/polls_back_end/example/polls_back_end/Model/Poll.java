@@ -4,12 +4,15 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import java.util.List;
 
 @Document(collection = "polls")
 public class Poll {
     
     @Id
+    @JsonSerialize(using = ObjectIdSerializer.class)
     private ObjectId id;
     private boolean isActive;
     private int totalVotes;
