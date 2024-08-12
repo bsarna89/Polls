@@ -12,7 +12,7 @@ import polls_back_end.example.polls_back_end.Service.PollService;
 
 @RestController
 @RequestMapping("/api/polls")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"http://localhost:5173"}) // FE localhost
 public class PollController {
     @Autowired
     private PollService pollService;

@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "66ba663a80fcd52853ece24b"
+  },
+  "pollId": {
+    "$oid": "66b667d3156bb475648dfe5a"
+  },
+  "optionText": "Italian",
+  "voteTime": {
+    "$date": "2024-08-12T19:44:58.406Z"
+  },
+  "_class": "polls_back_end.example.polls_back_end.Model.Vote"
+},
+{
+  "_id": {
+    "$oid": "66ba665280fcd52853ece24c"
+  },
+  "pollId": {
+    "$oid": "66b6687b156bb475648dfe5b"
+  },
+  "optionText": "JavaScript (Node.js)",
+  "voteTime": {
+    "$date": "2024-08-12T19:45:22.635Z"
+  },
+  "_class": "polls_back_end.example.polls_back_end.Model.Vote"
+},
+{
+  "_id": {
+    "$oid": "66ba666180fcd52853ece24d"
+  },
+  "pollId": {
+    "$oid": "66b72d59d1ffd0561c9560b5"
+  },
+  "optionText": "Cat",
+  "voteTime": {
+    "$date": "2024-08-12T19:45:37.943Z"
+  },
+  "_class": "polls_back_end.example.polls_back_end.Model.Vote"
+},
+{
+  "_id": {
+    "$oid": "66ba667680fcd52853ece24e"
+  },
+  "pollId": {
+    "$oid": "66b8cb5439a9d30e51d5e561"
+  },
+  "optionText": "Manchester",
+  "voteTime": {
+    "$date": "2024-08-12T19:45:58.900Z"
+  },
+  "_class": "polls_back_end.example.polls_back_end.Model.Vote"
+},
+{
+  "_id": {
+    "$oid": "66ba668680fcd52853ece24f"
+  },
+  "pollId": {
+    "$oid": "66b790246c8ead7e5558452b"
+  },
+  "optionText": "React",
+  "voteTime": {
+    "$date": "2024-08-12T19:46:14.703Z"
+  },
+  "_class": "polls_back_end.example.polls_back_end.Model.Vote"
+},
+{
+  "_id": {
+    "$oid": "66ba669180fcd52853ece250"
+  },
+  "pollId": {
+    "$oid": "66b8d09039a9d30e51d5e562"
+  },
+  "optionText": "No",
+  "voteTime": {
+    "$date": "2024-08-12T19:46:25.566Z"
+  },
+  "_class": "polls_back_end.example.polls_back_end.Model.Vote"
+}]

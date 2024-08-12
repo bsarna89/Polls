@@ -20,7 +20,7 @@ const { pollCard } = copy;
 const selectedOption = ref("");
 const router = useRouter();
 
-const prepPayload = (selectedOption, poll) => {
+const prepPollPayload = (selectedOption, poll) => {
   const updatedPoll = { ...poll };
   delete updatedPoll.id;
   updatedPoll.totalVotes += 1;
@@ -34,12 +34,22 @@ const prepPayload = (selectedOption, poll) => {
 
 const updatePoll = async () => {
   if (selectedOption.value) {
-    const body = prepPayload(selectedOption.value, props.poll);
+    const pollBody = prepPollPayload(selectedOption.value, props.poll);
+    const voteBody = {
+      pollId: props.poll.id,
+      optionText: selectedOption.value.text
+    }
     try {
-      const response = await axios.put(
+      const responsePoll = await axios.put(
         `http://localhost:8080/api/polls/${props.poll.id}`,
         {
-          ...body,
+          ...pollBody,
+        }
+      );
+      const responseVote = await axios.post(
+        `http://localhost:8080/api/votes`,
+        {
+          ...voteBody,
         }
       );
       router.push("/results");
