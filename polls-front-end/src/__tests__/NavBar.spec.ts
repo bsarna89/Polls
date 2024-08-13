@@ -1,7 +1,7 @@
 import { mount } from "@vue/test-utils";
 import { describe, it, expect, vi } from "vitest";
 import { createRouter, createWebHistory } from "vue-router";
-import NavBar from "../NavBar/NavBar.vue";
+import NavBar from "@/components/NavBar/NavBar.vue";
 import { PrimeVue } from "@primevue/core";
 
 const router = createRouter({
