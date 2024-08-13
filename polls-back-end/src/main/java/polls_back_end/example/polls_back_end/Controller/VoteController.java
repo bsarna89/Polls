@@ -17,7 +17,7 @@ import polls_back_end.example.polls_back_end.Service.VoteService;
 
 @RestController
 @RequestMapping("/api/votes")
-@CrossOrigin(origins = {"http://localhost:5173"}) // FE localhost
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:4173"}) // FE & Cypress localhosts
 public class VoteController {
     
     @Autowired
