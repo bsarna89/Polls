@@ -1,7 +1,7 @@
 <script setup>
+import axios from "axios";
 import { ref } from "vue";
 import { copy } from "../../assets/copy.ts";
-import axios from "axios";
 import { useRouter } from "vue-router";
 
 // Prime Vue Imports//
@@ -19,6 +19,8 @@ const props = defineProps({
 const { pollCard } = copy;
 const selectedOption = ref("");
 const router = useRouter();
+const POLL_URL = "http://localhost:8080/api/polls";
+const VOTE_URL = "http://localhost:8080/api/votes";
 
 const prepPollPayload = (selectedOption, poll) => {
   const updatedPoll = { ...poll };
@@ -37,21 +39,15 @@ const updatePoll = async () => {
     const pollBody = prepPollPayload(selectedOption.value, props.poll);
     const voteBody = {
       pollId: props.poll.id,
-      optionText: selectedOption.value.text
-    }
+      optionText: selectedOption.value.text,
+    };
     try {
-      const responsePoll = await axios.put(
-        `http://localhost:8080/api/polls/${props.poll.id}`,
-        {
-          ...pollBody,
-        }
-      );
-      const responseVote = await axios.post(
-        `http://localhost:8080/api/votes`,
-        {
-          ...voteBody,
-        }
-      );
+      const responsePoll = await axios.put(`${POLL_URL}/${props.poll.id}`, {
+        ...pollBody,
+      });
+      const responseVote = await axios.post(VOTE_URL, {
+        ...voteBody,
+      });
       router.push("/results");
     } catch (error) {
       console.error("Error updating poll:", error);

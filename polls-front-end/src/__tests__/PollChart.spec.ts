@@ -1,13 +1,14 @@
-import { describe, it, expect, beforeEach, vi } from "vitest";
-import { shallowMount, VueWrapper } from "@vue/test-utils";
 import PollChart from "@/components/PollChart/PollChart.vue";
 import Chart from "primevue/chart";
+import { describe, it, expect, beforeEach, vi } from "vitest";
+import { shallowMount, VueWrapper } from "@vue/test-utils";
+
 
 vi.mock("primevue/chart", () => ({
   default: vi.fn(),
 }));
 
-describe("ChartComponent", () => {
+describe("Poll Chart Test", () => {
   const poll = {
     totalVotes: 100,
     options: [

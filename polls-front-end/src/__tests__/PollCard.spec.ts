@@ -1,7 +1,7 @@
+import axios from "axios";
+import PollCard from "@/components/PollCard/PollCard.vue";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { mount, VueWrapper } from "@vue/test-utils";
-import PollCard from "@/components/PollCard/PollCard.vue";
-import axios from "axios";
 import { useRouter } from "vue-router";
 import { PrimeVue } from "@primevue/core";
 
@@ -15,7 +15,7 @@ vi.mock("vue-router", () => ({
   useRouter: vi.fn(),
 }));
 
-describe("PollCard.vue", () => {
+describe("PollCard Test", () => {
   const poll = {
     id: "1",
     question: "Your favorite programming language?",

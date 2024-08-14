@@ -1,7 +1,7 @@
 <script setup>
+import axios from "axios";
 import { ref } from "vue";
 import { copy } from "../assets/copy.ts";
-import axios from "axios";
 import { useRouter } from "vue-router";
 
 // Prime Vue Imports//
@@ -17,6 +17,7 @@ const router = useRouter();
 const voteText = ref("");
 const options = ref([]);
 const pollQuestion = ref("");
+const CREATE_POLL_URL = "http://localhost:8080/api/polls";
 
 const disableButton = options.length >= 7;
 
@@ -41,7 +42,7 @@ const createNewPoll = async () => {
 
   if (pollQuestion.value && options.value.length > 1) {
     try {
-      const response = await axios.post("http://localhost:8080/api/polls", {
+      const response = await axios.post(CREATE_POLL_URL, {
         ...pollData,
       });
       router.push("/");

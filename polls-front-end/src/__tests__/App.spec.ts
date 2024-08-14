@@ -1,9 +1,9 @@
-import { shallowMount, VueWrapper } from "@vue/test-utils";
 import App from "@/App.vue";
 import NavBar from "@/components/NavBar/NavBar.vue";
+import { shallowMount, VueWrapper } from "@vue/test-utils";
 import { beforeEach, describe, expect, it } from "vitest";
 
-describe("App.vue", () => {
+describe("App Test", () => {
   let wrapper: VueWrapper<any>;
 
   beforeEach(() => {

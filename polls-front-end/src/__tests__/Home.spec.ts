@@ -1,11 +1,11 @@
-import { describe, it, expect, beforeEach, vi } from "vitest";
-import { mount, shallowMount } from "@vue/test-utils";
 import HomePage from "@/views/HomeView.vue";
-import { useDataStore } from "@/stores/useDataStore";
 import PollCard from "@/components/PollCard/PollCard.vue";
 import Listbox from "primevue/listbox";
 import ProgressSpinner from "primevue/progressspinner";
 import Image from "primevue/image";
+import { describe, it, expect, beforeEach, vi } from "vitest";
+import { mount, shallowMount } from "@vue/test-utils";
+import { useDataStore } from "@/stores/useDataStore";
 import { ref } from "vue";
 
 vi.mock("@/stores/useDataStore");
@@ -19,7 +19,7 @@ vi.mock("primevue/image", () => ({
   default: vi.fn(),
 }));
 
-describe("HomePage.vue", () => {
+describe("HomePage Test", () => {
   let wrapper: ReturnType<typeof shallowMount>;
   let mockStore: any;
 

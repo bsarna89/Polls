@@ -1,7 +1,7 @@
+import NavBar from "@/components/NavBar/NavBar.vue";
 import { mount } from "@vue/test-utils";
 import { describe, it, expect, vi } from "vitest";
 import { createRouter, createWebHistory } from "vue-router";
-import NavBar from "@/components/NavBar/NavBar.vue";
 import { PrimeVue } from "@primevue/core";
 
 const router = createRouter({
@@ -32,7 +32,7 @@ vi.stubGlobal("matchMedia", (query: string) => ({
   dispatchEvent: vi.fn(),
 }));
 
-describe("NavBar.vue", () => {
+describe("NavBar Test", () => {
   it("renders correctly", async () => {
     const wrapper = mount(NavBar, {
       global: {

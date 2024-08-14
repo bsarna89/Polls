@@ -1,11 +1,10 @@
 <script setup lang="ts">
+import PollCard from "../components/PollCard/PollCard.vue";
 import { onMounted, computed, ref } from "vue";
 import { useDataStore } from "@/stores/useDataStore";
 import { copy } from "../assets/copy.ts";
-import PollCard from "../components/PollCard/PollCard.vue";
 
 // Prime Vue Imports//
-import Image from "primevue/image";
 import ProgressSpinner from "primevue/progressspinner";
 import Listbox from "primevue/listbox";
 
@@ -31,7 +30,6 @@ onMounted(() => {
 <template>
   <div>
     <h1 class="header">{{ homePage.header }}</h1>
-    <Image :src="homePage.links[0]" alt="Image" width="100%" />
     <div v-if="loading" class="loader">
       <ProgressSpinner />
     </div>
