@@ -9,9 +9,9 @@ This Poll Voting System is designed to work alongside graphics platform, allowin
 
 ## Features
 
-- Active Poll Display: The system displays the currently active poll as soon as the user visits the website.
-- Voting Mechanism: Users can select one of the available options to cast their vote.
-- Real-Time Results: After voting, users are shown the vote percentage for each option in real-time, giving them instant feedback.
+- **Active Poll Display:** The system displays the currently active poll as soon as the user visits the website.
+- **Voting Mechanism:** Users can select one of the available options to cast their vote.
+- **Real-Time Results:** After voting, users are shown the vote percentage for each option in real-time, giving them instant feedback.
 
 ## Implemented Requirements
 
@@ -30,7 +30,7 @@ This Poll Voting System is designed to work alongside graphics platform, allowin
 - **Docker Compose**
 - **Hosting**
 
-### Enhance React Functionality
+### Enhance Vue Functionality
 - **User Authentication & Authorization**
 - **UI/UX Improvements**
 - **Full Testing**

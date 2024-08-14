@@ -14,7 +14,7 @@ The application is built using Vue 3, PrimeVue components, and is partly tested 
 ## Technologies Used
 - **Vue 3:** JavaScript / TypeScript framework for building user interfaces.
 - **PrimeVue:** UI Component library for Vue.js.
-- **Pinia:** State management library for Vue.
+- **Pinia:** Store management library for Vue.
 - **Vitest:** Unit testing framework for Vue.
 - **Cypress:** End-to-end testing framework.
 - **Vite:** Development environment for Vue.js.
@@ -31,9 +31,6 @@ The application is built using Vue 3, PrimeVue components, and is partly tested 
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-### Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
 ### Customize configuration
 
@@ -48,7 +45,7 @@ cd polls-front-end
 
 ### Run Backend in background
 
-Instructions for starting the Polls Back End:   [polls-back-end](polls-back-end/README.md)
+Instructions for starting the Polls Back End:   [polls-back-end](../polls-back-end/README.md)
 
 ### Project Setup
 
