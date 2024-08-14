@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import { copy } from "../../assets/copy.ts";
+import { copy } from "../../assets/copy";
 
 // Prime Vue Imports//
 import Menubar from "primevue/menubar";

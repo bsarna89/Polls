@@ -2,7 +2,7 @@
 import PollCard from "../components/PollCard/PollCard.vue";
 import { onMounted, computed, ref } from "vue";
 import { useDataStore } from "@/stores/useDataStore";
-import { copy } from "../assets/copy.ts";
+import { copy } from "../assets/copy";
 
 // Prime Vue Imports//
 import ProgressSpinner from "primevue/progressspinner";
@@ -15,7 +15,7 @@ const polls = computed(() => store.polls);
 const loading = computed(() => store.loading);
 const error = computed(() => store.error);
 
-const selectedPoll = ref(null);
+const selectedPoll = ref<any>(null);
 const pollsList = computed(() =>
   store.polls
     .filter((poll) => poll.active)
@@ -46,7 +46,7 @@ onMounted(() => {
     </div>
 
     <div v-if="selectedPoll" class="poll">
-      <PollCard :poll="selectedPoll.pollDetails" />
+      <PollCard :poll="selectedPoll?.pollDetails" />
     </div>
   </div>
 </template>
